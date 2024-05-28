@@ -7,11 +7,9 @@ require('dotenv').config();
 
 // Access your API key as an environment variable and initialise API
 
-/* this is what is playing up
+// this is what is playing up
 const GEMINI_API_KEY = process.env.GEM_API_KEY 
-*/
 
-console.log(GEMINI_API_KEY)
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 let context = 'You have a lisp'
